@@ -1,0 +1,188 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(to right, rgb(198, 103, 198), rgb(86, 86, 128));
+            color: #fff;
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 20px;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: #f8f8f8;
+            text-decoration: underline;
+        }
+        
+        .hero {
+            text-align: center;
+            padding: 80px 0;
+        }
+        
+        .hero h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        
+        .hero p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .section {
+            margin: 60px 0;
+        }
+        
+        .section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            position: relative;
+            display: inline-block;
+        }
+        
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: rgba(255,255,255,0.5);
+        }
+        
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 25px;
+        }
+        
+        .card {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 25px;
+            border-radius: 10px;
+            transition: transform 0.3s ease;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 50px;
+            border-top: 1px solid rgba(255,255,255,0.1);
+        }
+        
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+            
+            nav ul {
+                gap: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>我的作品集</h1>
+            <nav>
+                <ul>
+                    <li><a href="#about">关于我</a></li>
+                    <li><a href="#skills">技能</a></li>
+                    <li><a href="#projects">项目</a></li>
+                    <li><a href="#contact">联系</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <section class="hero" id="about">
+            <h2>你好，我是[你的名字]</h2>
+            <p>网页开发与设计师</p>
+        </section>
+        
+        <section class="section" id="skills">
+            <h2>我的技能</h2>
+            <div class="grid">
+                <div class="card">
+                <div class="card"><h3>网页开发</h3>
+                    <p>HTML, CSS, JavaScript, React</p>
+                </div>
+                <div class="card">    <div class="card"><h3>UI/UX设计</h3>
+                    <p>Figma, Adobe XD, 用户研究</p>
+                </div>
+                <div class="card">
+                <div class="card"><h3>后端开发</h3>
+                    <p>Node.js, Express, MongoDB</p>
+                </div>
+            </div>
+        </section>
+        
+        <section class="section" id="projects">
+            <h2>我的项目</h2>
+            <div class="grid">
+                <div class="card">
+                <div class="card"><h3>电商网站</h3>
+                    <p>全栈电商平台，集成支付功能</p>
+                </div>
+                <div class="card">          <div class="card"><h3>作品集设计</h3>
+                    <p>为创意专业人士设计的现代作品集</p>
+                </div>
+                <div class="card">             <div class="card"><h3>任务管理应用</h3>
+                    <p>支持实时协作的效率应用</p>
+                </div>
+            </div>
+        </section>
+        
+        <footer id="contact">
+            <h3>联系方式</h3>
+            <p>邮箱：2686342065@qq.com</p>
+            <p>电话：(123) 456-7890</p>
+        </footer>
+    </div>
+</body>
+</html>  </div>
+</body>
+</html>
